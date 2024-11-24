@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "fayza mahmoud",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -70.8,
+      "left": 109.4,
+      "attrs": { "color": "purple" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "uno:GND.1", "magenta", [ "v0", "h-18.8" ] ],
+    [ "led1:A", "uno:8", "magenta", [ "v0", "h38.4", "v28.8" ] ]
+  ],
+  "dependencies": {}
+}
